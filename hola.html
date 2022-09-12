@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    body{
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100vh;
+    }
+    h1{
+        flex:0;
+        background: red;
+        margin: 0;
+    }
+    div.parent{
+        display: flex;
+        flex:1;
+        background: green;
+        margin: 0;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .child{
+        flex-grow:1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        background: yellow;
+        margin: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>HOLA</h1>
+    <div class="parent">
+        <div class="child">
+            CUADRO 1
+        </div>
+        <div class="child">
+            CUADRO 2
+        </div>
+        <div class="child">
+            CUADRO 3
+        </div>
+    </div>
+
+</body>
+</html>
